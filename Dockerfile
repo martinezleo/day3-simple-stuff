@@ -5,6 +5,6 @@ COPY config/server.env /config/
 
 USER root
 
-COPY Dockerfile /my-special-folder
+COPY Dockerfile /my-special-folder/
 
 RUN chgrp -R 0 /my-special-folder && chmod -R g=u /my-special-folder
